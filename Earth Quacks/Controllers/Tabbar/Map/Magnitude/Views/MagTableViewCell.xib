@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="MagTableViewCell" customModule="Earth_Quacks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r56-y8-cdg">
+                        <rect key="frame" x="10" y="5" width="361" height="93"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Above 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wp6-Ht-w6E">
+                                <rect key="frame" x="139.33333333333334" y="38" width="82.666666666666657" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70980392156862748" green="0.72549019607843135" blue="0.80000000000000004" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wp6-Ht-w6E" firstAttribute="centerX" secondItem="r56-y8-cdg" secondAttribute="centerX" id="3y4-Av-QZx"/>
+                            <constraint firstItem="wp6-Ht-w6E" firstAttribute="centerY" secondItem="r56-y8-cdg" secondAttribute="centerY" id="YJd-Ew-WnC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="r56-y8-cdg" secondAttribute="bottom" constant="5" id="1og-os-Amj"/>
+                    <constraint firstItem="r56-y8-cdg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="bHd-8K-tMc"/>
+                    <constraint firstAttribute="trailing" secondItem="r56-y8-cdg" secondAttribute="trailing" constant="10" id="sFE-Jt-Ezg"/>
+                    <constraint firstItem="r56-y8-cdg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="yzu-of-Zvg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="magTitle" destination="wp6-Ht-w6E" id="teU-kH-tc9"/>
+                <outlet property="mainView" destination="r56-y8-cdg" id="fLq-TQ-SCx"/>
+            </connections>
+            <point key="canvasLocation" x="-9.9236641221374047" y="40.492957746478872"/>
+        </tableViewCell>
+    </objects>
+</document>

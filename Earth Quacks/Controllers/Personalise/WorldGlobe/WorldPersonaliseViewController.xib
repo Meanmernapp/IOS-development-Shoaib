@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WorldPersonaliseViewController" customModule="Earth_Quacks" customModuleProvider="target">
+            <connections>
+                <outlet property="lottieAnimationView" destination="L09-II-zD9" id="9lC-5H-pUh"/>
+                <outlet property="titleLbl" destination="hi8-1s-IKs" id="2g3-cg-MiC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L09-II-zD9" customClass="LottieAnimationView" customModule="Lottie">
+                    <rect key="frame" x="76.666666666666686" y="276" width="240" height="240"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="IKV-Se-reb"/>
+                        <constraint firstAttribute="width" constant="240" id="L10-C8-r4i"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hi8-1s-IKs">
+                    <rect key="frame" x="92" y="536" width="209" height="58.666666666666629"/>
+                    <string key="text">Personalizing
+your experience.</string>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hi8-1s-IKs" secondAttribute="trailing" constant="10" id="6d2-aC-V1x"/>
+                <constraint firstItem="hi8-1s-IKs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7zh-Nm-GxQ"/>
+                <constraint firstItem="hi8-1s-IKs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="AB8-5H-eoa"/>
+                <constraint firstItem="L09-II-zD9" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-30" id="IXS-HZ-3kQ"/>
+                <constraint firstItem="hi8-1s-IKs" firstAttribute="top" secondItem="L09-II-zD9" secondAttribute="bottom" constant="20" id="JES-bd-Ppc"/>
+                <constraint firstItem="L09-II-zD9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K28-hv-Hkb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="L09-II-zD9" secondAttribute="trailing" constant="20" id="K3b-6i-ihO"/>
+                <constraint firstItem="L09-II-zD9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dei-Ta-Dd3"/>
+            </constraints>
+            <point key="canvasLocation" x="103" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

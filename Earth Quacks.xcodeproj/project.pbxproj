@@ -1,0 +1,1214 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FFEA263FA02DEBEBF9E65A9 /* Pods_Earth_Quacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3603233727BEAD768E5F06CD /* Pods_Earth_Quacks.framework */; };
+		C09B16D6276D77022405832C /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F1D692637099C323CB3784 /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		D50FA52429FD39050031CA9C /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50FA52229FD39050031CA9C /* ListDetailViewController.swift */; };
+		D50FA52529FD39050031CA9C /* ListDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D50FA52329FD39050031CA9C /* ListDetailViewController.xib */; };
+		D51F5D2829F1895E00EED00A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F5D2629F1895E00EED00A /* ListTableViewCell.swift */; };
+		D51F5D2929F1895E00EED00A /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51F5D2729F1895E00EED00A /* ListTableViewCell.xib */; };
+		D51F5D2D29F190F500EED00A /* WeeklyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F5D2B29F190F500EED00A /* WeeklyCollectionViewCell.swift */; };
+		D51F5D2E29F190F500EED00A /* WeeklyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D51F5D2C29F190F500EED00A /* WeeklyCollectionViewCell.xib */; };
+		D51F5D3029F1919600EED00A /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51F5D2F29F1919600EED00A /* CalendarHelper.swift */; };
+		D58FEF4329E619A9000CB273 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D58FEF4229E619A9000CB273 /* GoogleService-Info.plist */; };
+		D5C5EE3929FBEC9E0098721C /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C5EE3829FBEC9E0098721C /* ListViewModel.swift */; };
+		D5C5EE3C29FBF8B80098721C /* ListVCExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C5EE3B29FBF8B80098721C /* ListVCExtention.swift */; };
+		D5D5CCFC29E88707004B7B17 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5CCFA29E88707004B7B17 /* ListViewController.swift */; };
+		D5D5CCFF29E8871C004B7B17 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5CCFE29E8871C004B7B17 /* SettingViewController.swift */; };
+		D5D5CD0329E88757004B7B17 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5CD0129E88757004B7B17 /* Constants.swift */; };
+		D5D5CD0429E88757004B7B17 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5CD0229E88757004B7B17 /* ApiClient.swift */; };
+		D5D5CD0729E888B1004B7B17 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5CD0629E888B1004B7B17 /* NotificationModel.swift */; };
+		D5D5CD0929E88DA3004B7B17 /* EarthQuackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D5CD0829E88DA3004B7B17 /* EarthQuackModel.swift */; };
+		D5E4460929E0A3F8001C3826 /* earthquakes.json in Resources */ = {isa = PBXBuildFile; fileRef = D5E445B829E0A3F8001C3826 /* earthquakes.json */; };
+		D5E4460B29E0A3F8001C3826 /* ChooseDistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445BF29E0A3F8001C3826 /* ChooseDistanceViewController.swift */; };
+		D5E4460C29E0A3F8001C3826 /* ChooseDistanceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E445C029E0A3F8001C3826 /* ChooseDistanceViewController.xib */; };
+		D5E4460D29E0A3F8001C3826 /* WorldPersonaliseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E445C229E0A3F8001C3826 /* WorldPersonaliseViewController.xib */; };
+		D5E4460E29E0A3F8001C3826 /* WorldPersonaliseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445C329E0A3F8001C3826 /* WorldPersonaliseViewController.swift */; };
+		D5E4460F29E0A3F8001C3826 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445C529E0A3F8001C3826 /* BaseViewModel.swift */; };
+		D5E4461029E0A3F8001C3826 /* PersonaliseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E445C729E0A3F8001C3826 /* PersonaliseViewController.xib */; };
+		D5E4461129E0A3F8001C3826 /* PersonaliseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445C829E0A3F8001C3826 /* PersonaliseViewController.swift */; };
+		D5E4461229E0A3F8001C3826 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445CA29E0A3F8001C3826 /* LocationViewController.swift */; };
+		D5E4461329E0A3F8001C3826 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E445CB29E0A3F8001C3826 /* LocationViewController.xib */; };
+		D5E4461429E0A3F8001C3826 /* EarthQuackMagValueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445CD29E0A3F8001C3826 /* EarthQuackMagValueViewController.swift */; };
+		D5E4461529E0A3F8001C3826 /* EarthQuackMagValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E445CE29E0A3F8001C3826 /* EarthQuackMagValueViewController.xib */; };
+		D5E4461629E0A3F8001C3826 /* BeSafeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E445D029E0A3F8001C3826 /* BeSafeViewController.xib */; };
+		D5E4461729E0A3F8001C3826 /* BeSafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445D129E0A3F8001C3826 /* BeSafeViewController.swift */; };
+		D5E4461829E0A3F8001C3826 /* MapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445D529E0A3F8001C3826 /* MapViewExtension.swift */; };
+		D5E4461929E0A3F8001C3826 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445D629E0A3F8001C3826 /* MapViewModel.swift */; };
+		D5E4461A29E0A3F8001C3826 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445D729E0A3F8001C3826 /* MapViewController.swift */; };
+		D5E4461B29E0A3F8001C3826 /* CalenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E445D929E0A3F8001C3826 /* CalenderViewController.xib */; };
+		D5E4461C29E0A3F8001C3826 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445DA29E0A3F8001C3826 /* CalenderViewController.swift */; };
+		D5E4461D29E0A3F8001C3826 /* MagViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E445DC29E0A3F8001C3826 /* MagViewController.xib */; };
+		D5E4461E29E0A3F8001C3826 /* MagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445DD29E0A3F8001C3826 /* MagViewController.swift */; };
+		D5E4461F29E0A3F8001C3826 /* MagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445DF29E0A3F8001C3826 /* MagTableViewCell.swift */; };
+		D5E4462029E0A3F8001C3826 /* MagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E445E029E0A3F8001C3826 /* MagTableViewCell.xib */; };
+		D5E4462129E0A3F8001C3826 /* HomeTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445E329E0A3F8001C3826 /* HomeTabbarViewController.swift */; };
+		D5E4462329E0A3F8001C3826 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445E629E0A3F8001C3826 /* UIView.swift */; };
+		D5E4462429E0A3F8001C3826 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445E729E0A3F8001C3826 /* Global.swift */; };
+		D5E4462529E0A3F8001C3826 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445E829E0A3F8001C3826 /* BaseViewController.swift */; };
+		D5E4462629E0A3F8001C3826 /* DayRangeSelectionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445E929E0A3F8001C3826 /* DayRangeSelectionTracker.swift */; };
+		D5E4462729E0A3F8001C3826 /* CalenderBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445EA29E0A3F8001C3826 /* CalenderBaseViewController.swift */; };
+		D5E4462829E0A3F8001C3826 /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445EB29E0A3F8001C3826 /* ShareData.swift */; };
+		D5E4462929E0A3F8001C3826 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445EC29E0A3F8001C3826 /* AppUtility.swift */; };
+		D5E4462A29E0A3F8001C3826 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445ED29E0A3F8001C3826 /* Utility.swift */; };
+		D5E4462B29E0A3F8001C3826 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E445F029E0A3F8001C3826 /* Montserrat-VariableFont_wght.ttf */; };
+		D5E4462C29E0A3F8001C3826 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E445F129E0A3F8001C3826 /* Montserrat-Medium.ttf */; };
+		D5E4462D29E0A3F8001C3826 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E445F229E0A3F8001C3826 /* Montserrat-Light.ttf */; };
+		D5E4462E29E0A3F8001C3826 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E445F329E0A3F8001C3826 /* Montserrat-ExtraLight.ttf */; };
+		D5E4462F29E0A3F8001C3826 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E445F429E0A3F8001C3826 /* Montserrat-Thin.ttf */; };
+		D5E4463029E0A3F8001C3826 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E445F529E0A3F8001C3826 /* Montserrat-Bold.ttf */; };
+		D5E4463129E0A3F8001C3826 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E445F629E0A3F8001C3826 /* Montserrat-SemiBold.ttf */; };
+		D5E4463229E0A3F8001C3826 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E445F729E0A3F8001C3826 /* Montserrat-Black.ttf */; };
+		D5E4463329E0A3F8001C3826 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5E445F829E0A3F8001C3826 /* Montserrat-Regular.ttf */; };
+		D5E4463429E0A3F8001C3826 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = D5E445FA29E0A3F8001C3826 /* SFPRODISPLAYREGULAR.OTF */; };
+		D5E4463529E0A3F8001C3826 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = D5E445FB29E0A3F8001C3826 /* SFPRODISPLAYBOLD.OTF */; };
+		D5E4463629E0A3F8001C3826 /* SFPRODISPLAYMEDIUM.OTF in Resources */ = {isa = PBXBuildFile; fileRef = D5E445FC29E0A3F8001C3826 /* SFPRODISPLAYMEDIUM.OTF */; };
+		D5E4463729E0A3F8001C3826 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445FE29E0A3F8001C3826 /* CustomAnnotation.swift */; };
+		D5E4463829E0A3F8001C3826 /* DayRangeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E445FF29E0A3F8001C3826 /* DayRangeIndicatorView.swift */; };
+		D5E4463929E0A3F8001C3826 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4460029E0A3F8001C3826 /* Coordinator.swift */; };
+		D5E4463A29E0A3F8001C3826 /* Map-Flat.json in Resources */ = {isa = PBXBuildFile; fileRef = D5E4460229E0A3F8001C3826 /* Map-Flat.json */; };
+		D5E4463B29E0A3F8001C3826 /* Earth.json in Resources */ = {isa = PBXBuildFile; fileRef = D5E4460329E0A3F8001C3826 /* Earth.json */; };
+		D5E4463C29E0A3F8001C3826 /* Circles.json in Resources */ = {isa = PBXBuildFile; fileRef = D5E4460429E0A3F8001C3826 /* Circles.json */; };
+		D5E4463D29E0A3F8001C3826 /* Map.json in Resources */ = {isa = PBXBuildFile; fileRef = D5E4460529E0A3F8001C3826 /* Map.json */; };
+		D5E4464029E0A4FF001C3826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E4463F29E0A4FF001C3826 /* LaunchScreen.storyboard */; };
+		D5E4464229E0A511001C3826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E4464129E0A511001C3826 /* Main.storyboard */; };
+		D5E4464429E0B578001C3826 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4464329E0B578001C3826 /* PushNotificationManager.swift */; };
+		D5E4464829E451B0001C3826 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4464629E451B0001C3826 /* WebViewController.swift */; };
+		D5E4464929E451B0001C3826 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E4464729E451B0001C3826 /* WebViewController.xib */; };
+		D5E4465129E45738001C3826 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4465029E45738001C3826 /* NotificationService.swift */; };
+		D5E4465529E45738001C3826 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D5E4464E29E45738001C3826 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D5E4465B29E457FF001C3826 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4465A29E457FF001C3826 /* NotificationService.swift */; };
+		D5E4465F29E46B03001C3826 /* UserConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4465D29E46B03001C3826 /* UserConfigurationViewController.swift */; };
+		D5E4466029E46B03001C3826 /* UserConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E4465E29E46B03001C3826 /* UserConfigurationViewController.xib */; };
+		D5E4466429E475DE001C3826 /* SupportPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E4466229E475DE001C3826 /* SupportPageViewController.swift */; };
+		D5E4466529E475DE001C3826 /* SupportPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E4466329E475DE001C3826 /* SupportPageViewController.xib */; };
+		D5F206DF29D4ED300004EF12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F206DE29D4ED300004EF12 /* AppDelegate.swift */; };
+		D5F206E829D4ED320004EF12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5F206E729D4ED320004EF12 /* Assets.xcassets */; };
+		D5F2072129D53E580004EF12 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = D5F2072029D53E580004EF12 /* HorizonCalendar */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5E4465329E45738001C3826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5F206D329D4ED300004EF12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5E4464D29E45738001C3826;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5E4465929E45739001C3826 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D5E4465529E45738001C3826 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3603233727BEAD768E5F06CD /* Pods_Earth_Quacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Earth_Quacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CEBC990236ED81B9B44757F /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		770EE819F3116E99087F8EB0 /* Pods-Earth Quacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Earth Quacks.debug.xcconfig"; path = "Target Support Files/Pods-Earth Quacks/Pods-Earth Quacks.debug.xcconfig"; sourceTree = "<group>"; };
+		91B33D43273E224426461C8C /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		AABC3E0D283119E46DFEAF01 /* Pods-Earth Quacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Earth Quacks.release.xcconfig"; path = "Target Support Files/Pods-Earth Quacks/Pods-Earth Quacks.release.xcconfig"; sourceTree = "<group>"; };
+		C3F1D692637099C323CB3784 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50FA52229FD39050031CA9C /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
+		D50FA52329FD39050031CA9C /* ListDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListDetailViewController.xib; sourceTree = "<group>"; };
+		D51F5D2629F1895E00EED00A /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		D51F5D2729F1895E00EED00A /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		D51F5D2B29F190F500EED00A /* WeeklyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCollectionViewCell.swift; sourceTree = "<group>"; };
+		D51F5D2C29F190F500EED00A /* WeeklyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeeklyCollectionViewCell.xib; sourceTree = "<group>"; };
+		D51F5D2F29F1919600EED00A /* CalendarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		D58FEF4229E619A9000CB273 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D5C5EE3829FBEC9E0098721C /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		D5C5EE3B29FBF8B80098721C /* ListVCExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVCExtention.swift; sourceTree = "<group>"; };
+		D5D5CCFA29E88707004B7B17 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D5D5CCFE29E8871C004B7B17 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		D5D5CD0129E88757004B7B17 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D5D5CD0229E88757004B7B17 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		D5D5CD0629E888B1004B7B17 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		D5D5CD0829E88DA3004B7B17 /* EarthQuackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthQuackModel.swift; sourceTree = "<group>"; };
+		D5E445B629E0A3F8001C3826 /* Earth Quacks.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Earth Quacks.entitlements"; sourceTree = "<group>"; };
+		D5E445B829E0A3F8001C3826 /* earthquakes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = earthquakes.json; sourceTree = "<group>"; };
+		D5E445BF29E0A3F8001C3826 /* ChooseDistanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseDistanceViewController.swift; sourceTree = "<group>"; };
+		D5E445C029E0A3F8001C3826 /* ChooseDistanceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseDistanceViewController.xib; sourceTree = "<group>"; };
+		D5E445C229E0A3F8001C3826 /* WorldPersonaliseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorldPersonaliseViewController.xib; sourceTree = "<group>"; };
+		D5E445C329E0A3F8001C3826 /* WorldPersonaliseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldPersonaliseViewController.swift; sourceTree = "<group>"; };
+		D5E445C529E0A3F8001C3826 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		D5E445C729E0A3F8001C3826 /* PersonaliseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonaliseViewController.xib; sourceTree = "<group>"; };
+		D5E445C829E0A3F8001C3826 /* PersonaliseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonaliseViewController.swift; sourceTree = "<group>"; };
+		D5E445CA29E0A3F8001C3826 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		D5E445CB29E0A3F8001C3826 /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
+		D5E445CD29E0A3F8001C3826 /* EarthQuackMagValueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthQuackMagValueViewController.swift; sourceTree = "<group>"; };
+		D5E445CE29E0A3F8001C3826 /* EarthQuackMagValueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EarthQuackMagValueViewController.xib; sourceTree = "<group>"; };
+		D5E445D029E0A3F8001C3826 /* BeSafeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeSafeViewController.xib; sourceTree = "<group>"; };
+		D5E445D129E0A3F8001C3826 /* BeSafeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeSafeViewController.swift; sourceTree = "<group>"; };
+		D5E445D529E0A3F8001C3826 /* MapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewExtension.swift; sourceTree = "<group>"; };
+		D5E445D629E0A3F8001C3826 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		D5E445D729E0A3F8001C3826 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D5E445D929E0A3F8001C3826 /* CalenderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalenderViewController.xib; sourceTree = "<group>"; };
+		D5E445DA29E0A3F8001C3826 /* CalenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
+		D5E445DC29E0A3F8001C3826 /* MagViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MagViewController.xib; sourceTree = "<group>"; };
+		D5E445DD29E0A3F8001C3826 /* MagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagViewController.swift; sourceTree = "<group>"; };
+		D5E445DF29E0A3F8001C3826 /* MagTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagTableViewCell.swift; sourceTree = "<group>"; };
+		D5E445E029E0A3F8001C3826 /* MagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MagTableViewCell.xib; sourceTree = "<group>"; };
+		D5E445E329E0A3F8001C3826 /* HomeTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabbarViewController.swift; sourceTree = "<group>"; };
+		D5E445E629E0A3F8001C3826 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		D5E445E729E0A3F8001C3826 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		D5E445E829E0A3F8001C3826 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D5E445E929E0A3F8001C3826 /* DayRangeSelectionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayRangeSelectionTracker.swift; sourceTree = "<group>"; };
+		D5E445EA29E0A3F8001C3826 /* CalenderBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderBaseViewController.swift; sourceTree = "<group>"; };
+		D5E445EB29E0A3F8001C3826 /* ShareData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
+		D5E445EC29E0A3F8001C3826 /* AppUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		D5E445ED29E0A3F8001C3826 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		D5E445F029E0A3F8001C3826 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		D5E445F129E0A3F8001C3826 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		D5E445F229E0A3F8001C3826 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		D5E445F329E0A3F8001C3826 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D5E445F429E0A3F8001C3826 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		D5E445F529E0A3F8001C3826 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		D5E445F629E0A3F8001C3826 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		D5E445F729E0A3F8001C3826 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		D5E445F829E0A3F8001C3826 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		D5E445FA29E0A3F8001C3826 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
+		D5E445FB29E0A3F8001C3826 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
+		D5E445FC29E0A3F8001C3826 /* SFPRODISPLAYMEDIUM.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYMEDIUM.OTF; sourceTree = "<group>"; };
+		D5E445FE29E0A3F8001C3826 /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		D5E445FF29E0A3F8001C3826 /* DayRangeIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayRangeIndicatorView.swift; sourceTree = "<group>"; };
+		D5E4460029E0A3F8001C3826 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D5E4460229E0A3F8001C3826 /* Map-Flat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Map-Flat.json"; sourceTree = "<group>"; };
+		D5E4460329E0A3F8001C3826 /* Earth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Earth.json; sourceTree = "<group>"; };
+		D5E4460429E0A3F8001C3826 /* Circles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Circles.json; sourceTree = "<group>"; };
+		D5E4460529E0A3F8001C3826 /* Map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Map.json; sourceTree = "<group>"; };
+		D5E4463F29E0A4FF001C3826 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5E4464129E0A511001C3826 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D5E4464329E0B578001C3826 /* PushNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
+		D5E4464629E451B0001C3826 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		D5E4464729E451B0001C3826 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		D5E4464E29E45738001C3826 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E4465029E45738001C3826 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		D5E4465229E45738001C3826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5E4465A29E457FF001C3826 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		D5E4465D29E46B03001C3826 /* UserConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigurationViewController.swift; sourceTree = "<group>"; };
+		D5E4465E29E46B03001C3826 /* UserConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserConfigurationViewController.xib; sourceTree = "<group>"; };
+		D5E4466229E475DE001C3826 /* SupportPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportPageViewController.swift; sourceTree = "<group>"; };
+		D5E4466329E475DE001C3826 /* SupportPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SupportPageViewController.xib; sourceTree = "<group>"; };
+		D5F206DB29D4ED300004EF12 /* Earth Quacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Earth Quacks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F206DE29D4ED300004EF12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5F206E729D4ED320004EF12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5F206EC29D4ED320004EF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5E4464B29E45738001C3826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09B16D6276D77022405832C /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F206D829D4ED300004EF12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5F2072129D53E580004EF12 /* HorizonCalendar in Frameworks */,
+				0FFEA263FA02DEBEBF9E65A9 /* Pods_Earth_Quacks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B2432FFD37C366C574AD243 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3603233727BEAD768E5F06CD /* Pods_Earth_Quacks.framework */,
+				C3F1D692637099C323CB3784 /* Pods_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D50FA52129FD38ED0031CA9C /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				D50FA52229FD39050031CA9C /* ListDetailViewController.swift */,
+				D50FA52329FD39050031CA9C /* ListDetailViewController.xib */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		D51F5D2529F1890100EED00A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D51F5D2629F1895E00EED00A /* ListTableViewCell.swift */,
+				D51F5D2729F1895E00EED00A /* ListTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D51F5D2A29F190E200EED00A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D51F5D2B29F190F500EED00A /* WeeklyCollectionViewCell.swift */,
+				D51F5D2C29F190F500EED00A /* WeeklyCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5C5EE3A29FBF89B0098721C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D5C5EE3829FBEC9E0098721C /* ListViewModel.swift */,
+				D5C5EE3B29FBF8B80098721C /* ListVCExtention.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D5D5CD0029E88757004B7B17 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D5D5CD0129E88757004B7B17 /* Constants.swift */,
+				D5D5CD0229E88757004B7B17 /* ApiClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D5D5CD0529E8888C004B7B17 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		D5E445B729E0A3F8001C3826 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445B829E0A3F8001C3826 /* earthquakes.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D5E445B929E0A3F8001C3826 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5D5CD0829E88DA3004B7B17 /* EarthQuackModel.swift */,
+				D5D5CD0629E888B1004B7B17 /* NotificationModel.swift */,
+				D5D5CD0529E8888C004B7B17 /* BaseModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5E445BB29E0A3F8001C3826 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445BD29E0A3F8001C3826 /* Personalise */,
+				D5E445D229E0A3F8001C3826 /* Tabbar */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D5E445BD29E0A3F8001C3826 /* Personalise */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4466129E475CC001C3826 /* Support Page */,
+				D5E4465C29E46AD6001C3826 /* User Configuration */,
+				D5E445C129E0A3F8001C3826 /* WorldGlobe */,
+				D5E445CF29E0A3F8001C3826 /* BeSafe */,
+				D5E445CC29E0A3F8001C3826 /* EarthQuackMagnitude */,
+				D5E445BE29E0A3F8001C3826 /* EarthQuackDistance */,
+				D5E445C929E0A3F8001C3826 /* Location */,
+				D5E445C629E0A3F8001C3826 /* Landing */,
+			);
+			path = Personalise;
+			sourceTree = "<group>";
+		};
+		D5E445BE29E0A3F8001C3826 /* EarthQuackDistance */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445BF29E0A3F8001C3826 /* ChooseDistanceViewController.swift */,
+				D5E445C029E0A3F8001C3826 /* ChooseDistanceViewController.xib */,
+			);
+			path = EarthQuackDistance;
+			sourceTree = "<group>";
+		};
+		D5E445C129E0A3F8001C3826 /* WorldGlobe */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445C229E0A3F8001C3826 /* WorldPersonaliseViewController.xib */,
+				D5E445C329E0A3F8001C3826 /* WorldPersonaliseViewController.swift */,
+			);
+			path = WorldGlobe;
+			sourceTree = "<group>";
+		};
+		D5E445C429E0A3F8001C3826 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445C529E0A3F8001C3826 /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D5E445C629E0A3F8001C3826 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4464529E4517B001C3826 /* WebView */,
+				D5E445C729E0A3F8001C3826 /* PersonaliseViewController.xib */,
+				D5E445C829E0A3F8001C3826 /* PersonaliseViewController.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		D5E445C929E0A3F8001C3826 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445CA29E0A3F8001C3826 /* LocationViewController.swift */,
+				D5E445CB29E0A3F8001C3826 /* LocationViewController.xib */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		D5E445CC29E0A3F8001C3826 /* EarthQuackMagnitude */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445CD29E0A3F8001C3826 /* EarthQuackMagValueViewController.swift */,
+				D5E445CE29E0A3F8001C3826 /* EarthQuackMagValueViewController.xib */,
+			);
+			path = EarthQuackMagnitude;
+			sourceTree = "<group>";
+		};
+		D5E445CF29E0A3F8001C3826 /* BeSafe */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445D029E0A3F8001C3826 /* BeSafeViewController.xib */,
+				D5E445D129E0A3F8001C3826 /* BeSafeViewController.swift */,
+			);
+			path = BeSafe;
+			sourceTree = "<group>";
+		};
+		D5E445D229E0A3F8001C3826 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445D329E0A3F8001C3826 /* Map */,
+				D5E445E129E0A3F8001C3826 /* List */,
+				D5E445E229E0A3F8001C3826 /* Setting */,
+				D5E445E329E0A3F8001C3826 /* HomeTabbarViewController.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		D5E445D329E0A3F8001C3826 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445D729E0A3F8001C3826 /* MapViewController.swift */,
+				D5E445D429E0A3F8001C3826 /* ViewModel */,
+				D5E445D829E0A3F8001C3826 /* Calender */,
+				D5E445DB29E0A3F8001C3826 /* Magnitude */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D5E445D429E0A3F8001C3826 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445D529E0A3F8001C3826 /* MapViewExtension.swift */,
+				D5E445D629E0A3F8001C3826 /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D5E445D829E0A3F8001C3826 /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				D51F5D2A29F190E200EED00A /* Views */,
+				D5E445D929E0A3F8001C3826 /* CalenderViewController.xib */,
+				D5E445DA29E0A3F8001C3826 /* CalenderViewController.swift */,
+			);
+			path = Calender;
+			sourceTree = "<group>";
+		};
+		D5E445DB29E0A3F8001C3826 /* Magnitude */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445DC29E0A3F8001C3826 /* MagViewController.xib */,
+				D5E445DD29E0A3F8001C3826 /* MagViewController.swift */,
+				D5E445DE29E0A3F8001C3826 /* Views */,
+			);
+			path = Magnitude;
+			sourceTree = "<group>";
+		};
+		D5E445DE29E0A3F8001C3826 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445DF29E0A3F8001C3826 /* MagTableViewCell.swift */,
+				D5E445E029E0A3F8001C3826 /* MagTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5E445E129E0A3F8001C3826 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D50FA52129FD38ED0031CA9C /* DetailView */,
+				D5C5EE3A29FBF89B0098721C /* ViewModel */,
+				D51F5D2529F1890100EED00A /* Views */,
+				D5D5CCFA29E88707004B7B17 /* ListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		D5E445E229E0A3F8001C3826 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				D5D5CCFE29E8871C004B7B17 /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		D5E445E429E0A3F8001C3826 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445FD29E0A3F8001C3826 /* Custom */,
+				D5E445EE29E0A3F8001C3826 /* Fonts */,
+				D51F5D2F29F1919600EED00A /* CalendarHelper.swift */,
+				D5E445E629E0A3F8001C3826 /* UIView.swift */,
+				D5E445E729E0A3F8001C3826 /* Global.swift */,
+				D5E4464329E0B578001C3826 /* PushNotificationManager.swift */,
+				D5E445E829E0A3F8001C3826 /* BaseViewController.swift */,
+				D5E445E929E0A3F8001C3826 /* DayRangeSelectionTracker.swift */,
+				D5E445EA29E0A3F8001C3826 /* CalenderBaseViewController.swift */,
+				D5E445EB29E0A3F8001C3826 /* ShareData.swift */,
+				D5E445EC29E0A3F8001C3826 /* AppUtility.swift */,
+				D5E445ED29E0A3F8001C3826 /* Utility.swift */,
+				D5E445FF29E0A3F8001C3826 /* DayRangeIndicatorView.swift */,
+				D5E4460029E0A3F8001C3826 /* Coordinator.swift */,
+				D5E4465A29E457FF001C3826 /* NotificationService.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D5E445EE29E0A3F8001C3826 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445EF29E0A3F8001C3826 /* Montserrat */,
+				D5E445F929E0A3F8001C3826 /* SF-pro */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D5E445EF29E0A3F8001C3826 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445F029E0A3F8001C3826 /* Montserrat-VariableFont_wght.ttf */,
+				D5E445F129E0A3F8001C3826 /* Montserrat-Medium.ttf */,
+				D5E445F229E0A3F8001C3826 /* Montserrat-Light.ttf */,
+				D5E445F329E0A3F8001C3826 /* Montserrat-ExtraLight.ttf */,
+				D5E445F429E0A3F8001C3826 /* Montserrat-Thin.ttf */,
+				D5E445F529E0A3F8001C3826 /* Montserrat-Bold.ttf */,
+				D5E445F629E0A3F8001C3826 /* Montserrat-SemiBold.ttf */,
+				D5E445F729E0A3F8001C3826 /* Montserrat-Black.ttf */,
+				D5E445F829E0A3F8001C3826 /* Montserrat-Regular.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		D5E445F929E0A3F8001C3826 /* SF-pro */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445FA29E0A3F8001C3826 /* SFPRODISPLAYREGULAR.OTF */,
+				D5E445FB29E0A3F8001C3826 /* SFPRODISPLAYBOLD.OTF */,
+				D5E445FC29E0A3F8001C3826 /* SFPRODISPLAYMEDIUM.OTF */,
+			);
+			path = "SF-pro";
+			sourceTree = "<group>";
+		};
+		D5E445FD29E0A3F8001C3826 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				D5E445FE29E0A3F8001C3826 /* CustomAnnotation.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		D5E4460129E0A3F8001C3826 /* iQuake */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4460229E0A3F8001C3826 /* Map-Flat.json */,
+				D5E4460329E0A3F8001C3826 /* Earth.json */,
+				D5E4460429E0A3F8001C3826 /* Circles.json */,
+				D5E4460529E0A3F8001C3826 /* Map.json */,
+			);
+			path = iQuake;
+			sourceTree = "<group>";
+		};
+		D5E4464529E4517B001C3826 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4464629E451B0001C3826 /* WebViewController.swift */,
+				D5E4464729E451B0001C3826 /* WebViewController.xib */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		D5E4464F29E45738001C3826 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4465029E45738001C3826 /* NotificationService.swift */,
+				D5E4465229E45738001C3826 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		D5E4465C29E46AD6001C3826 /* User Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4465D29E46B03001C3826 /* UserConfigurationViewController.swift */,
+				D5E4465E29E46B03001C3826 /* UserConfigurationViewController.xib */,
+			);
+			path = "User Configuration";
+			sourceTree = "<group>";
+		};
+		D5E4466129E475CC001C3826 /* Support Page */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4466229E475DE001C3826 /* SupportPageViewController.swift */,
+				D5E4466329E475DE001C3826 /* SupportPageViewController.xib */,
+			);
+			path = "Support Page";
+			sourceTree = "<group>";
+		};
+		D5F206D229D4ED300004EF12 = {
+			isa = PBXGroup;
+			children = (
+				D5F206DD29D4ED300004EF12 /* Earth Quacks */,
+				D5E4464F29E45738001C3826 /* OneSignalNotificationServiceExtension */,
+				D5F206DC29D4ED300004EF12 /* Products */,
+				E478BA143E66405FC1104FE1 /* Pods */,
+				7B2432FFD37C366C574AD243 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5F206DC29D4ED300004EF12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5F206DB29D4ED300004EF12 /* Earth Quacks.app */,
+				D5E4464E29E45738001C3826 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5F206DD29D4ED300004EF12 /* Earth Quacks */ = {
+			isa = PBXGroup;
+			children = (
+				D5F206DE29D4ED300004EF12 /* AppDelegate.swift */,
+				D5E445B629E0A3F8001C3826 /* Earth Quacks.entitlements */,
+				D5D5CD0029E88757004B7B17 /* Network */,
+				D5E445E429E0A3F8001C3826 /* Base */,
+				D5E445C429E0A3F8001C3826 /* ViewModel */,
+				D5E445BB29E0A3F8001C3826 /* Controllers */,
+				D5E445B729E0A3F8001C3826 /* Data */,
+				D5E4460129E0A3F8001C3826 /* iQuake */,
+				D5E445B929E0A3F8001C3826 /* Model */,
+				D5F206E729D4ED320004EF12 /* Assets.xcassets */,
+				D5E4463F29E0A4FF001C3826 /* LaunchScreen.storyboard */,
+				D5E4464129E0A511001C3826 /* Main.storyboard */,
+				D5F206EC29D4ED320004EF12 /* Info.plist */,
+				D58FEF4229E619A9000CB273 /* GoogleService-Info.plist */,
+			);
+			path = "Earth Quacks";
+			sourceTree = "<group>";
+		};
+		E478BA143E66405FC1104FE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				770EE819F3116E99087F8EB0 /* Pods-Earth Quacks.debug.xcconfig */,
+				AABC3E0D283119E46DFEAF01 /* Pods-Earth Quacks.release.xcconfig */,
+				6CEBC990236ED81B9B44757F /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				91B33D43273E224426461C8C /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5E4464D29E45738001C3826 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5E4465629E45739001C3826 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				46818BAEFA1DA663508F53BF /* [CP] Check Pods Manifest.lock */,
+				D5E4464A29E45738001C3826 /* Sources */,
+				D5E4464B29E45738001C3826 /* Frameworks */,
+				D5E4464C29E45738001C3826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = D5E4464E29E45738001C3826 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D5F206DA29D4ED300004EF12 /* Earth Quacks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5F206EF29D4ED320004EF12 /* Build configuration list for PBXNativeTarget "Earth Quacks" */;
+			buildPhases = (
+				60E7390BE8868AC6250A40C6 /* [CP] Check Pods Manifest.lock */,
+				D5F206D729D4ED300004EF12 /* Sources */,
+				D5F206D829D4ED300004EF12 /* Frameworks */,
+				D5F206D929D4ED300004EF12 /* Resources */,
+				1EE71C7DDC41C323DF68634A /* [CP] Embed Pods Frameworks */,
+				D5E4465929E45739001C3826 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5E4465429E45738001C3826 /* PBXTargetDependency */,
+			);
+			name = "Earth Quacks";
+			packageProductDependencies = (
+				D5F2072029D53E580004EF12 /* HorizonCalendar */,
+			);
+			productName = "Earth Quacks";
+			productReference = D5F206DB29D4ED300004EF12 /* Earth Quacks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5F206D329D4ED300004EF12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D5E4464D29E45738001C3826 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D5F206DA29D4ED300004EF12 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D5F206D629D4ED300004EF12 /* Build configuration list for PBXProject "Earth Quacks" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5F206D229D4ED300004EF12;
+			packageReferences = (
+				D5F2071F29D53E580004EF12 /* XCRemoteSwiftPackageReference "HorizonCalendar" */,
+			);
+			productRefGroup = D5F206DC29D4ED300004EF12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5F206DA29D4ED300004EF12 /* Earth Quacks */,
+				D5E4464D29E45738001C3826 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5E4464C29E45738001C3826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F206D929D4ED300004EF12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E4460C29E0A3F8001C3826 /* ChooseDistanceViewController.xib in Resources */,
+				D5E4463129E0A3F8001C3826 /* Montserrat-SemiBold.ttf in Resources */,
+				D5E4462B29E0A3F8001C3826 /* Montserrat-VariableFont_wght.ttf in Resources */,
+				D51F5D2929F1895E00EED00A /* ListTableViewCell.xib in Resources */,
+				D5E4464929E451B0001C3826 /* WebViewController.xib in Resources */,
+				D5F206E829D4ED320004EF12 /* Assets.xcassets in Resources */,
+				D5E4463A29E0A3F8001C3826 /* Map-Flat.json in Resources */,
+				D5E4462D29E0A3F8001C3826 /* Montserrat-Light.ttf in Resources */,
+				D5E4466529E475DE001C3826 /* SupportPageViewController.xib in Resources */,
+				D58FEF4329E619A9000CB273 /* GoogleService-Info.plist in Resources */,
+				D5E4463229E0A3F8001C3826 /* Montserrat-Black.ttf in Resources */,
+				D5E4461529E0A3F8001C3826 /* EarthQuackMagValueViewController.xib in Resources */,
+				D5E4461B29E0A3F8001C3826 /* CalenderViewController.xib in Resources */,
+				D5E4462C29E0A3F8001C3826 /* Montserrat-Medium.ttf in Resources */,
+				D5E4460D29E0A3F8001C3826 /* WorldPersonaliseViewController.xib in Resources */,
+				D5E4466029E46B03001C3826 /* UserConfigurationViewController.xib in Resources */,
+				D5E4460929E0A3F8001C3826 /* earthquakes.json in Resources */,
+				D5E4463C29E0A3F8001C3826 /* Circles.json in Resources */,
+				D5E4463629E0A3F8001C3826 /* SFPRODISPLAYMEDIUM.OTF in Resources */,
+				D5E4463329E0A3F8001C3826 /* Montserrat-Regular.ttf in Resources */,
+				D5E4463029E0A3F8001C3826 /* Montserrat-Bold.ttf in Resources */,
+				D5E4462E29E0A3F8001C3826 /* Montserrat-ExtraLight.ttf in Resources */,
+				D5E4463B29E0A3F8001C3826 /* Earth.json in Resources */,
+				D50FA52529FD39050031CA9C /* ListDetailViewController.xib in Resources */,
+				D5E4463D29E0A3F8001C3826 /* Map.json in Resources */,
+				D5E4461029E0A3F8001C3826 /* PersonaliseViewController.xib in Resources */,
+				D5E4461629E0A3F8001C3826 /* BeSafeViewController.xib in Resources */,
+				D5E4461D29E0A3F8001C3826 /* MagViewController.xib in Resources */,
+				D5E4461329E0A3F8001C3826 /* LocationViewController.xib in Resources */,
+				D5E4462F29E0A3F8001C3826 /* Montserrat-Thin.ttf in Resources */,
+				D51F5D2E29F190F500EED00A /* WeeklyCollectionViewCell.xib in Resources */,
+				D5E4464229E0A511001C3826 /* Main.storyboard in Resources */,
+				D5E4463429E0A3F8001C3826 /* SFPRODISPLAYREGULAR.OTF in Resources */,
+				D5E4464029E0A4FF001C3826 /* LaunchScreen.storyboard in Resources */,
+				D5E4463529E0A3F8001C3826 /* SFPRODISPLAYBOLD.OTF in Resources */,
+				D5E4462029E0A3F8001C3826 /* MagTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EE71C7DDC41C323DF68634A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Earth Quacks/Pods-Earth Quacks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Earth Quacks/Pods-Earth Quacks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Earth Quacks/Pods-Earth Quacks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46818BAEFA1DA663508F53BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60E7390BE8868AC6250A40C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Earth Quacks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5E4464A29E45738001C3826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E4465129E45738001C3826 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5F206D729D4ED300004EF12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E4462729E0A3F8001C3826 /* CalenderBaseViewController.swift in Sources */,
+				D5E4462529E0A3F8001C3826 /* BaseViewController.swift in Sources */,
+				D5E4461E29E0A3F8001C3826 /* MagViewController.swift in Sources */,
+				D5E4466429E475DE001C3826 /* SupportPageViewController.swift in Sources */,
+				D5D5CD0929E88DA3004B7B17 /* EarthQuackModel.swift in Sources */,
+				D5E4462129E0A3F8001C3826 /* HomeTabbarViewController.swift in Sources */,
+				D5E4462A29E0A3F8001C3826 /* Utility.swift in Sources */,
+				D5E4461C29E0A3F8001C3826 /* CalenderViewController.swift in Sources */,
+				D5E4461729E0A3F8001C3826 /* BeSafeViewController.swift in Sources */,
+				D5D5CD0729E888B1004B7B17 /* NotificationModel.swift in Sources */,
+				D5E4465F29E46B03001C3826 /* UserConfigurationViewController.swift in Sources */,
+				D5C5EE3C29FBF8B80098721C /* ListVCExtention.swift in Sources */,
+				D5F206DF29D4ED300004EF12 /* AppDelegate.swift in Sources */,
+				D5E4460F29E0A3F8001C3826 /* BaseViewModel.swift in Sources */,
+				D5E4462629E0A3F8001C3826 /* DayRangeSelectionTracker.swift in Sources */,
+				D5D5CCFC29E88707004B7B17 /* ListViewController.swift in Sources */,
+				D5E4461F29E0A3F8001C3826 /* MagTableViewCell.swift in Sources */,
+				D5E4465B29E457FF001C3826 /* NotificationService.swift in Sources */,
+				D5E4464429E0B578001C3826 /* PushNotificationManager.swift in Sources */,
+				D5E4461A29E0A3F8001C3826 /* MapViewController.swift in Sources */,
+				D50FA52429FD39050031CA9C /* ListDetailViewController.swift in Sources */,
+				D5E4460B29E0A3F8001C3826 /* ChooseDistanceViewController.swift in Sources */,
+				D5E4462329E0A3F8001C3826 /* UIView.swift in Sources */,
+				D5E4463929E0A3F8001C3826 /* Coordinator.swift in Sources */,
+				D5E4460E29E0A3F8001C3826 /* WorldPersonaliseViewController.swift in Sources */,
+				D5E4461829E0A3F8001C3826 /* MapViewExtension.swift in Sources */,
+				D5D5CCFF29E8871C004B7B17 /* SettingViewController.swift in Sources */,
+				D51F5D3029F1919600EED00A /* CalendarHelper.swift in Sources */,
+				D5E4462829E0A3F8001C3826 /* ShareData.swift in Sources */,
+				D5E4463829E0A3F8001C3826 /* DayRangeIndicatorView.swift in Sources */,
+				D51F5D2829F1895E00EED00A /* ListTableViewCell.swift in Sources */,
+				D5E4463729E0A3F8001C3826 /* CustomAnnotation.swift in Sources */,
+				D5E4462429E0A3F8001C3826 /* Global.swift in Sources */,
+				D5E4461429E0A3F8001C3826 /* EarthQuackMagValueViewController.swift in Sources */,
+				D51F5D2D29F190F500EED00A /* WeeklyCollectionViewCell.swift in Sources */,
+				D5E4461229E0A3F8001C3826 /* LocationViewController.swift in Sources */,
+				D5D5CD0429E88757004B7B17 /* ApiClient.swift in Sources */,
+				D5E4461129E0A3F8001C3826 /* PersonaliseViewController.swift in Sources */,
+				D5E4464829E451B0001C3826 /* WebViewController.swift in Sources */,
+				D5E4461929E0A3F8001C3826 /* MapViewModel.swift in Sources */,
+				D5D5CD0329E88757004B7B17 /* Constants.swift in Sources */,
+				D5E4462929E0A3F8001C3826 /* AppUtility.swift in Sources */,
+				D5C5EE3929FBEC9E0098721C /* ListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5E4465429E45738001C3826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5E4464D29E45738001C3826 /* OneSignalNotificationServiceExtension */;
+			targetProxy = D5E4465329E45738001C3826 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D5E4465729E45739001C3826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CEBC990236ED81B9B44757F /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = XY338TPK8F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standAlone.Earth-Quacks.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5E4465829E45739001C3826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91B33D43273E224426461C8C /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = XY338TPK8F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standAlone.Earth-Quacks.OneSignalNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5F206ED29D4ED320004EF12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5F206EE29D4ED320004EF12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5F206F029D4ED320004EF12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 770EE819F3116E99087F8EB0 /* Pods-Earth Quacks.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Earth Quacks/Earth Quacks.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = XY338TPK8F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Earth Quacks/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = iQuake;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To get your live location";
+				INFOPLIST_KEY_NSLocationUsageDescription = "To get your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To get your location";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized quacks to you.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standAlone.Earth-Quacks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D5F206F129D4ED320004EF12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AABC3E0D283119E46DFEAF01 /* Pods-Earth Quacks.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Earth Quacks/Earth Quacks.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = XY338TPK8F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Earth Quacks/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = iQuake;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To get your live location";
+				INFOPLIST_KEY_NSLocationUsageDescription = "To get your location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To get your location";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized quacks to you.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standAlone.Earth-Quacks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5E4465629E45739001C3826 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5E4465729E45739001C3826 /* Debug */,
+				D5E4465829E45739001C3826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F206D629D4ED300004EF12 /* Build configuration list for PBXProject "Earth Quacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F206ED29D4ED320004EF12 /* Debug */,
+				D5F206EE29D4ED320004EF12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5F206EF29D4ED320004EF12 /* Build configuration list for PBXNativeTarget "Earth Quacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5F206F029D4ED320004EF12 /* Debug */,
+				D5F206F129D4ED320004EF12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D5F2071F29D53E580004EF12 /* XCRemoteSwiftPackageReference "HorizonCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/HorizonCalendar";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D5F2072029D53E580004EF12 /* HorizonCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5F2071F29D53E580004EF12 /* XCRemoteSwiftPackageReference "HorizonCalendar" */;
+			productName = HorizonCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D5F206D329D4ED300004EF12 /* Project object */;
+}

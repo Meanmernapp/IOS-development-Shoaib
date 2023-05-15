@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewController" customModule="Earth_Quacks" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webVoiew" destination="5Ur-Gf-7dM" id="eHg-WR-kWF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ue6-hP-yH3">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ur-Gf-7dM">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <wkWebViewConfiguration key="configuration">
+                                <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                <wkPreferences key="preferences"/>
+                            </wkWebViewConfiguration>
+                        </wkWebView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6X-QW-4fR">
+                            <rect key="frame" x="30" y="89" width="12" height="22"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="backButton"/>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="n0S-My-uEg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="5Ur-Gf-7dM" secondAttribute="bottom" id="0jz-oA-sa5"/>
+                        <constraint firstItem="5Ur-Gf-7dM" firstAttribute="top" secondItem="ue6-hP-yH3" secondAttribute="top" id="86O-0x-31g"/>
+                        <constraint firstAttribute="trailing" secondItem="5Ur-Gf-7dM" secondAttribute="trailing" id="Fqx-yy-QeV"/>
+                        <constraint firstItem="p6X-QW-4fR" firstAttribute="leading" secondItem="ue6-hP-yH3" secondAttribute="leading" constant="30" id="dqq-2C-08d"/>
+                        <constraint firstItem="5Ur-Gf-7dM" firstAttribute="leading" secondItem="ue6-hP-yH3" secondAttribute="leading" id="yfP-Ly-com"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ue6-hP-yH3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0oh-Vc-lFh"/>
+                <constraint firstAttribute="bottom" secondItem="ue6-hP-yH3" secondAttribute="bottom" id="GYp-RT-xJw"/>
+                <constraint firstItem="ue6-hP-yH3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Jyq-wl-fSa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="p6X-QW-4fR" secondAttribute="top" constant="-30" id="X23-Hi-Aj7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ue6-hP-yH3" secondAttribute="trailing" id="v3m-ww-S9L"/>
+            </constraints>
+            <point key="canvasLocation" x="79" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backButton" width="12" height="21"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
